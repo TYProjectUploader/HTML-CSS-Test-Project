@@ -1,0 +1,64 @@
+/*style sheet for the news page*/
+.gametwitters {
+  display: flex;
+  flex-wrap: wrap; /*makes twitter timelines go onto next line instead of extending horizontally forever*/
+}
+.timeline-box {
+  width: 50%; /*width is set to 50% so two can fit side by side*/
+}
+h1{
+  color: #6E82CC;
+  margin: 0; /*remove default margins*/
+  display: inline-block; /*allow amagi image to be on same line as text*/
+  vertical-align: middle; /*align text to image center*/
+}
+.amagi {
+  display: inline-block; /*allow amagi image to be on same line as text*/
+  vertical-align: middle; /*align image to text center*/
+  width: 40px; /*sets side of amagi*/
+}
+h2 {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif; /*sets font to be roboto but sans-serif if roboto can't load for whatever reason*/
+  font-weight: Medium 500; /*change font thickness*/
+  font-style: italic; /*makes text italic*/
+  border-bottom: 2px solid white; /*underline for title*/
+}
+h3 {
+  margin-top: 0;
+  text-align: center;
+  color: rgb(199, 223, 248);
+}
+h4 { /*twitter timeline headers*/
+  text-align: center;
+  font-size: 17px;
+  width: 50%;
+  margin: 0 auto 15px auto; /*centers header and adds 15 px margin on bottom*/
+  font-weight: 500;
+  border-bottom: 1px solid white;
+}
+body{
+  background-color: black;
+  color: white;
+}
+main{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+@media (max-width: 900px){ 
+  .timeline-box { /*changes twitter timelines to be one on top of the other instead of side by side by having each take entire up entire width*/
+    width: 100%;
+    margin: 0px 5%; /*adds left and right margin to twitter timeline*/
+  }
+}
+@media (max-width: 700px){ 
+  main{
+    margin: 80px 0;
+  }
+}
+@media (min-width: 701px) and (max-width: 1200px){
+  main{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

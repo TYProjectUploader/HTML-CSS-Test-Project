@@ -1,0 +1,29 @@
+/*footer styles*/
+footer { 
+  background-color: black;
+  padding: 1px; /*adds space to inside of the footer "block" so that background colour extends all the way */
+  text-align: center;
+}
+.footerlogo { /*limit width of footer logo, height automatically resizes with this to prevent stretching*/
+  width: 150px;
+  margin: 0px 10px;
+}
+footer h1{
+  font-family: Helvetica;
+  margin-top: 5px;
+  margin-bottom: 10px;;
+  color: grey; /*text color*/
+}
+footer p{
+  color: grey;
+  font-size: 15px;
+}
+.social-links-container {
+  display: flex; /*makes the social media logo hyperlinks to be stacked one a top another when browser resized*/
+  justify-content: center; /*centers the links*/
+  align-items: center; /*lines up the images in their centers*/
+}
+.sociallinks img{ /*sets size of the social media logos*/
+  padding: 0px 20px;
+  width: 30px;
+}

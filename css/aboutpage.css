@@ -1,0 +1,30 @@
+/*styles for about page*/
+h1{ /* styles header type 1 in the page*/
+  font-family: helvetica; /*font used*/
+  font-size: 28px; 
+  color: #6E82CC; /*text colour*/
+}
+.abouttext {
+  color: white; 
+  font-family: sans-serif;
+  margin: 0px 20%; /*sets space on left and right to make reading easier on a screen */
+}
+main {
+  background-color: black; /*background colour of all elements*/
+}
+.abouttext p{ /*styles for text specifically for the about descriptions*/
+  margin-bottom: 0px; /*leaves 0 pixel space at bottom before next element*/
+}
+.sponslogo { /*style image of sponsor logos */
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.spons{
+  margin-left: 31%; /* line up text with sponsor logos beneath so it doesn't look weird*/
+}
+@media (max-width: 600px){ /*change left & right margins for text when window size is inbetween 1001px & 1300px*/
+  .abouttext{
+    margin: 0;
+  }
+}

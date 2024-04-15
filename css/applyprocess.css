@@ -1,0 +1,85 @@
+/*style sheet for both the applied page and application page*/
+main { /*styles for everything outside of header and footer */
+  background-color: black;
+  font-family: helvetica;
+}
+.applicationform{ /*style for application form*/
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 100px;
+}
+.signup{ /*sytles for signup button*/
+  border-radius: 5px; /*round off edges of button */
+  background-color: #17349d;
+  margin-left: 45%;
+  padding: 5px 12px; /*places space to top & bottom then right and left of the button text*/
+  margin-top: 30px;
+  font-size: 30px;
+  transition: all 0.4s; /*set colour change of both text and background transition time*/
+}
+.signup:hover{ /*apply these settings for signup button when hovered*/
+  background-color: #E3F5FE;
+  color: black;
+}
+.gemcontainer2{ /*pushes (floats) 2nd gem on the form to the right of the page*/
+  float:right; 
+}
+.gemcontainer,.gemcontainer2 { /*set size of gems with their containers*/
+  width: 5%; /*size of gems are 5% of the browser */
+}
+.gemcontainer img,.gemcontainer2 img { /*makes gems take up all space of its container*/
+  width: 100%;
+}
+.gifcontainer { /*styles for gif container*/
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center; /*centers gif*/
+}
+.gifcontainer img {
+  width: 100%;
+}
+h1 { /*styles for header type 1*/
+  color: #6E82CC;
+  margin: 0; /*removes default margins*/
+  text-align: center; /*centers text */
+}
+select {
+  background-image: none; /* rid of blue outline on dropdown list when activated*/
+}
+p {
+  color: white;
+  text-align: center;
+}
+select { /*style for the drop down selects*/
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+label { /*style text beside upload resume button*/
+  color: white;
+  font-size: 20px;
+}
+button {
+  cursor: pointer; /*changes cursor to a pointer when hovering over a button */
+}
+textarea { /*styles for text input area*/
+  font-family: 'roboto';
+  margin-bottom: 10px;
+  border: none; /*removes default borders*/
+  resize: none; /*removes ability to resize input area which is on by default*/
+  border-radius: 5px; /*curves the input area*/
+  width: 100%; /*extends text input area to take up all space given to it which is limited by the margins placed on the overall form */
+  font-size: 20px;
+}
+@media (max-width: 700px){  /*rids of margins for the application form and gif when the browser size is less than 700 px*/
+  .applicationform, .gifcontainer{
+    margin: 0;
+  }
+}
+@media (min-width: 701px) and (max-width: 1200px){ 
+  /*changes margin size for the application form and gif to 5% when the browser size is between 701 px and 1200px*/
+  .applicationform, .gifcontainer{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

@@ -1,0 +1,17 @@
+/*style sheet that is applied to all webpages*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); 
+/*import roboto font from google font library*/
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap');
+
+body { /*styles that apply to entire page for the body element*/
+  font-family: 'Roboto', Arial; 
+  /*set roboto as default font for everything in every page unless otherwise specified and if can't be loaded, load arial font */
+  margin: 0px;
+}
+main {
+  margin-top: 80px; /*leave space so elements don't show up beneath header at top of page since header is 80px */
+}
+a {
+  text-decoration: none; /*removes underline for all links in website unless otherwise specified*/
+}

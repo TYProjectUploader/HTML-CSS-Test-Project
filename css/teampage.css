@@ -1,0 +1,80 @@
+/*careers page css*/
+.careerheader {
+  text-align: center;
+  color: #6E82CC;
+}
+.signupanchor{ /*styles for button on the back of the flip card*/
+  border-radius: 5px;
+  background-color: #17349d;
+  margin-left: 43%; /*centers button*/
+  padding: 5px 12px;
+  transition: all 0.4s; 
+}
+.signupanchor:hover{
+  background-color: #96ceea;
+  color: black;
+}
+.careers{
+  display: flex;
+  flex-wrap: wrap; /*forces flex elements to next line if goes beyond given space instead of extending horizontally*/
+}
+.jobbox { /*space in which the flipcard containing job title fits and spins to display job description*/
+  flex: 1;
+  flex-basis: 49%;/*the amount of space a flex element is allowed to take up*/
+  perspective: 1000px; /*determines how far the box looks when it rotates*/
+  min-width: 350px; /*sets minimum width of the image before it is forced into single column*/
+}
+.flip-card {
+  transition: transform 1.5s ease-out; /*sets how long it takes for the box to flip with ease out effect*/
+  transform-style: preserve-3d; /*When box is flipping, the back and front is considered a 2 sided 3d object instead of just a singular face*/
+}
+.jobimage{
+  width: 100%;
+  float: right; /*right or left doesn't matter, just need to make image wrap for whole container of flipbox*/
+}
+.jobtitle{
+  position: absolute; /*makes the position of title based on the job box*/
+  color: #4467e8;
+  text-align: center;
+  text-shadow: 3px 3px 4px black; /*gives the title a blurred shadow 3px to the right and bottom of the title to make it stand out*/
+  width: 100%;
+}
+.jobbox:hover .flip-card { /*horizontally flips the box to show backside on hover*/
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  backface-visibility: hidden; /*Defines whether the other side of the flip card is shown when on a given side*/
+}
+.flip-card-back {
+  position: absolute; /*sets position of card back relative to flip card instead of displaying underneath of the front*/
+  transform: rotateY(180deg); /*makes the back side of the flip card at the back by rotating it 180 by default*/
+}
+body {
+  background-color: black;
+  font-family: helvetica;
+}
+main{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.flip-card-back p {
+  margin-top: 10%;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  text-align: center; /*aligns text on back to be centered*/
+}
+button {
+  cursor: pointer; /*change cursor to a pointer when button is hovered*/
+}
+@media (max-width: 1000px){ /*remove left and right spacing when window size is smaller than 1000px*/
+  main{
+    margin: 80px 0;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1300px){ /*change space between left & right when window size is inbetween 1001px & 1300px*/
+  main{
+    margin: 80px 5%;
+  }
+}

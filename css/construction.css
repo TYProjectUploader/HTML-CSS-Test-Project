@@ -1,0 +1,30 @@
+/*"under construction page styles*/
+h1 {
+  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: Black 900;
+  font-size: 45px;
+  color: #4467e8;
+}
+body{
+  background-color: black;
+}
+.gif { /*style for the gif*/
+  margin-bottom: 100px;
+}
+main {
+  text-align: center;
+  margin: 150px 15% 10px 15%;
+}
+@media (max-width: 700px){  /*rids of margins for everything other than header and footer when browser size less than 700 px*/
+  main{
+    margin: 80px 0;
+  }
+}
+@media (min-width: 701px) and (max-width: 1200px){
+  /*changes margin size for the application form and gif to 10% when the browser size is between 701 px and 1200px*/
+  main{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

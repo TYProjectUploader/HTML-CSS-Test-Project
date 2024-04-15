@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!--tells browser to use latest vers. of html-->
+<html> <!--start of data in the doc-->
+  <head> <!--meta data-->
+    <title>Gacha Hole</title> <!--browser tab name-->
+    <link rel="icon" href="assets/browsericon.png"> <!--browser tab icon can be seen in tab bar-->
+    <!--multiple css sheets are used so that it is easy to find where specfic styles are-->
+    <link rel="stylesheet" href="css/main.css"> <!--link css that applies to all html files-->
+    <link rel="stylesheet" href="css/header.css"> <!--Link header css-->
+    <link rel="stylesheet" href="css/aboutpage.css"> <!--Link header css-->
+    <link rel="stylesheet" href="css/footer.css"> <!--link footer css-->
+  </head>
+  <body> <!--page content--> <!--about page-->
+    <header> <!--header this and the footer will be the same across all documents-->
+      <div class="logocontainer"> <!--container for the logo so it can be contained within this space-->
+        <a href="homepage.html"><img class="logo" src="assets/gachaholelogowhite.png"></a>
+        <!--anchor tag makes the image a hyperlink to the homepage-->
+      </div>
+      <nav> <!--tag that defines the stuff in here as a collection of hyper links-->
+        <div class="barbtns"> <!--divides each button in the header-->
+          <div> <!--div makes it so when drop down comes down it is same width-->
+            <button class="communpost"><a class="barlink" href="underconstruction.html">Community posts &darr;</a></button>
+            <!--sets the class of the button (hyperlink) and the text it has to be targeted individually in css -->
+            <div class="dropdown"> <!--drop down links when hovered works by styling in css-->
+                <!--many pages weren't created for the sake of saving time so they lead to a
+                "under construction page"-->
+                <a href="underconstruction.html">Top of all time</a> 
+                <!--makes the text link to the underconstruction page-->
+                <a href="underconstruction.html">Best of the year</a>
+                <a href="underconstruction.html">Hot!</a>
+                <a href="underconstruction.html">New</a>
+            </div>            
+          </div>
+        </div>
+        <div class="barbtns">
+          <button class="news"><a class="barlink" href="news.html">Official news</a></button>
+        </div>
+        <div class="barbtns">
+          <div>
+            <button class="guides"><a class="barlink" href="underconstruction.html">Guides & reviews &darr;</a></button>
+            <div class="dropdown">
+              <a href="underconstruction.html">Gameplay Guides</a>
+              <a href="underconstruction.html">Reviews</a>
+              <a href="ingamecurrency.html">Costs of hell</a>
+            </div>  
+          </div>
+        </div>
+        <div class="barbtns">
+          <button class ="team"><a class="barlink" href="teampage.html">Join our team</a></button>
+        </div>
+        <div class="barbtns">
+          <button class ='about'><a class="barlink" >About us</a></button>
+        </div>
+      </nav>
+    </header>
+    <main> <!--start of main content of the page--> <!--this is the about page-->
+      <div class="abouttext"> <!--container of all the text in the about page-->
+        <h1>What is Gacha Hole</h1> <!--header/subheading-->
+        <p> <!--text-->
+          <img style="float: right; width: 400px;"src="assets/gachaholelogowhite.png"> 
+          <!--Places logo to right and allows text to wrap around-->
+          Gacha Hole is a blog website for all things anime gacha game related. Whether you're a free-to-play player
+          or a massive whale, you'll be able to find all the information you ever wanted about gacha titles here. <br><br>
+          <!--br tags forces text onto next line 2 in succession creates a new paragraph effect-->
+          Made by a weeb that enjoys all genres these soul stealing games have to offer, you can be sure even the most
+          niche of titles won't be left out. <br> <br>
+  
+          You can catch us at anime conventions around the world such as AX (Anime Expo) and SMASH! (Sydney Manga and Anime Show) showcasing
+          and selling official merch of partnered titles. 
+        </p>
+        <h1>Our story so far</h1>
+        <p>
+          There was once a FTP average gacha enjoyer named Tim. They were tempted by a demon into playing Mahjong Soul with the Love is War
+          collaboration. They tried to find the most efficient ways to grind materials for rolling online but were annoyed by having to open
+          multiple tabs for various websites. Nor was there any easy-to-understand guides or warnings for the hole they were about to jump into.
+          As a result, they had some mishaps and violated their FTP life but still didn't get Hayasaka.<br><br>
+          Thus they created Gacha Hole, where everything about the gacha games they played had all their information compiled. No gacha addict shall 
+          ever have to waste precious seconds of grinding on searching for help only to find outdated guides and be left with no option but to whale.
+          <br><br>
+          Gacha Hole has sinced expanded to have a massive online community supported by both indie and established devs of gacha games. We now host 
+          information on every existing anime gacha game and are constantly updated 24/7 by volunteers and veteran players.    
+        </p>
+        <h1>Our goals for the future</h1>
+        <p>
+          Moving forward, we plan to set up support programs and asylums for those in danger of being tainted or have been tainted
+          by the same demon that once corrupted our founder. 
+          <br><br>
+          In addition,  we hope to offer online therapy by ex-gacha addicts for helping people that wish to climb out of the gacha hole
+          at some point in the near future.
+        </p>
+        <h1 class="spons">Partners/sponsors</h1> <!--partner logo heading styled in css-->
+        <p>
+          None so far :( But you could be the first!
+        </p>
+        <!--<img class="sponslogo" src="assets/sponsorlogos.png"> image of the sponsor logos-->
+      </div>
+    </main>
+    <footer> <!--footer-->
+      <h1>Connect with our community</h1>
+      <div class="social-links-container"> <!--container of the social media links-->
+        <div class="sociallinks"> <!--separates twitter and instagram to the left while so the logo can go in the middle -->
+          <a href="https://twitter.com" target="_blank"><img src="assets/twitterlogo.png"></a>
+          <!--makes the logos a hyperlink that opens in a new tab due to targer="_blank"-->
+          <a href="https://instagram.com" target="_blank"><img src="assets/instalogo.png"></a>
+        </div>
+        <img class="footerlogo" src="assets/gachaholelogogrey.png">
+        <div class="sociallinks">
+          <a href="https://youtube.com" target="_blank"><img src="assets/ytlogo.png"></a>
+          <a class='reddit' target="_blank" href="https://www.reddit.com/r/gachagaming/"><img src="assets/redditlogo.png"></a>
+        </div>
+      </div>
+      <p>Enquiries: gachahole@hell.co</p> <!--text for footer with contact information & acknowledgements-->
+      <p>All videos and images other than the Gacha Hole logo are not owned by Gacha Hole but are used under the terms of fair use in education.</p>
+      <p>&#8482; & &#169; 2023 Gacha Hole and its logo are exclusive property of Gachahell, Inc.<br> All rights reserved.</p>
+    </footer>
+  </body>
+</html>

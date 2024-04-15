@@ -1,0 +1,57 @@
+/*styles for production information page (costs of hell)*/
+.gamelogo {
+  display: inline-block; /*sets the logo to be a block that doesn't take up whole line by itself*/
+  width: 80px;
+  vertical-align: middle; /*aligns game logo with game text header in the center of each other */
+}
+.disclaimer { /*styles for disclaimer*/
+  font-size: 12px;
+  font-style: italic;
+}
+.genshinlogo { /*logo had different resolution to other game logos so had to have its own */
+  display: inline-block;
+  width: 40px;
+  vertical-align: middle;
+}
+.gametitle { 
+  border-bottom: 3px solid white;
+  margin-bottom: 15px; /*gives the game title an underline that extends whole page due to being a block element*/
+}
+p{
+  margin: 0; /*remove default margins*/
+}
+a { /*style hyperlink to sources to distinguish from regular text*/
+  color: rgb(83, 91, 248);
+}
+h1 {
+  margin-bottom: 0;
+  color: #6E82CC;
+}
+h2 {
+  display: inline-block; /*sets the logo to be a block that doesn't take up whole line by itself so it can placed beside logo*/
+  vertical-align: middle;
+  font-weight: 500; /*changes font thickness*/
+}
+img{
+  width: 100%;
+}
+body{
+  background-color: black;
+}
+main{
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/*resize styling see other css files for information*/
+@media (max-width: 700px){ 
+  main{
+    margin: 80px 0;
+  }
+}
+@media (min-width: 701px) and (max-width: 1200px){
+  main{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

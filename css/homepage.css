@@ -1,0 +1,52 @@
+/*homepage styles*/
+.homepageimg img{
+  width: 100%;
+}
+.hometext { /*makes text take up same amount of space as the image its paired with and re-sizable*/
+  flex: 1; 
+  color: white;
+  font-family: "roboto";
+}
+.hometext h1{
+  color: #6E82CC;;
+  margin: 0px;
+}
+.hometext p{
+  font-size: 20px;
+}
+.homeimagecontainer{
+  flex: 1; /*makes image take up same size as the text*/
+}
+.homeimage{
+  width: 100%;
+}
+.homecontent {
+  display: flex; 
+  flex-direction: column;
+}
+.contentcontainer{
+  display: flex;
+  align-items: center; /*aligns images and text to the center of each other */
+  margin-right: 10%; /*puts space on both left and right of the text/image pair for easier reading*/
+  margin-left: 10%;
+  padding: 20px 0;
+}
+main{
+  background-color: black;
+}
+@media (max-width: 1000px){ /*remove left and right spacing for the text/image pair when window size is smaller than 1000px*/
+  .contentcontainer{
+    margin: 0;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1300px){ /*change space between left & right spacing for the text/image pair when window size is inbetween 1001px & 1300px*/
+  .contentcontainer{
+    margin: 0px 5%;
+  }
+}
+@media (max-width: 900px) { /*change layout of image and text pair from side-by-side to one atop another*/
+  .contentcontainer{
+    flex-direction: column;
+    margin-top: 0px;
+  }
+}

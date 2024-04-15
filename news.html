@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head> <!--meta data-->
+  <title>Gacha Hole</title> <!--browser tab name-->
+  <link rel="icon" href="assets/browsericon.png"> <!--browser tab icon-->
+  <link rel="stylesheet" href="css/main.css"> <!--link css-->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--import jquery javascript library for fade out text-->
+  </head>
+  <body> <!--page content-->
+    <header>
+      <div class="logocontainer">
+        <a href="homepage.html"><img class="logo" src="assets/gachaholelogowhite.png"></a>
+      </div>
+      <nav>
+        <div class="barbtns">
+          <div> <!--div makes it so when drop down comes down it is same width-->
+            <button class="communpost"><a class="barlink" href="underconstruction.html">Community posts &darr;</a></button>
+            <div class="dropdown">
+                <a href="underconstruction.html">Top of all time</a>
+                <a href="underconstruction.html">Best of the year</a>
+                <a href="underconstruction.html">Hot!</a>
+                <a href="underconstruction.html">New</a>
+            </div>            
+          </div>
+        </div>
+        <div class="barbtns">
+          <button class="news"><a class="barlink" href="#">Official news</a></button>
+        </div>
+        <div class="barbtns">
+          <div>
+            <button class="guides"><a class="barlink" href= "underconstruction.html">Guides & reviews &darr;</a></button>
+            <div class="dropdown">
+              <a href="underconstruction.html">Gameplay Guides</a>
+              <a href="underconstruction.html">Reviews</a>
+              <a href="ingamecurrency.html">Costs of hell</a>
+            </div>  
+          </div>
+        </div>
+        <div class="barbtns">
+          <button class ="team"><a class="barlink" href="teampage.html">Join our team</a></button>
+        </div>
+        <div class="barbtns">
+          <button class ='about'><a class="barlink" href="About.html">About us</a></button>
+        </div>
+      </nav>
+    </header>
+    <main> <!--news page-->
+      <h1>The latest news in Gacha games</h1> <!--main heading-->
+      <img class="amagi" src="assets/amagi.png"> <!--small image to go beside the header-->
+      <h2>Featured!</h2> <!--subheading-->
+      <h3>Congratulations to Azur Lane EN for their 4th anniversary!!</h3> <!--subheading-->
+      <!--youtube embed-->
+      <iframe 
+      width=100% 
+      height=400px;
+      src="https://www.youtube.com/embed/rjGnIeSpAOM?autoplay=1&mute=1&playlist=rjGnIeSpAOM&loop=1"
+      frameborder="0" 
+      allow="autoplay;" 
+      allowfullscreen>
+      </iframe>
+      <!--In src the autoplay, mute and loop define how how the video is played 
+      autoplay set to 1 to start playing as soon as webpage loads but is muted due to youtube policies
+      loop loops a "dummy" playlist only containing the video since the video byitself cannot be looped-->
+      <h2>Game announcements</h2>
+      <p id="loadingtext">These may take a while to load as these are pages grabbed from APIs and are not property of Gacha Hole.</p>
+      <!--id allows for this text to be targeted by javascript code written below-->
+      <p>These Twitter timelines are scrollable!</p> <!--notice to remind user each twitter timeline can be scrolled-->
+      <script> 
+        $("#loadingtext").show().delay(3000).fadeOut("slow"); 
+      </script>
+      <!--script tag defines code inside as being java script-->
+      <!--targets the loading text and has it displayed upon load for 3 seconds before fading out using JS-->
+      <div class="gametwitters"> <!--groups all child elements which are the twitter timelines-->
+        <!--Azur Lane-->
+        <div class="timeline-box"> <!--container for each timeline to be styled-->
+          <h4>Azur Lane</h4> <!--game headings-->
+          <!--twitter embed-->
+          <a class="twitter-timeline" 
+          data-height="400" 
+          data-theme="dark" 
+          data-width="100%"
+          data-chrome="noheader noborders noscrollbar transparent nofooter"
+          href="https://twitter.com/AzurLane_EN?ref_src=twsrc%5Etfw">
+          </a> 
+          <!--data theme sets whether timeline is black or white
+          data chrome rids of default borders and other thigns that come with embed
+          transparent makes the background of the embed transparent-->
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+          <!--import JS for formatting time line from Twitter API-->
+        </div>
+        <!--Genshin Impact-->
+        <div class="timeline-box">
+          <h4>Genshin Impact</h4>
+          <a class="twitter-timeline" 
+          data-height="400" 
+          data-theme="dark" 
+          data-width="100%"
+          data-chrome="noheader noborders noscrollbar transparent nofooter"
+          href="https://twitter.com/GenshinImpact?ref_src=twsrc%5Etfw">
+          </a>
+        </div>
+        <!--Honkai Impact-->
+        <div class="timeline-box">
+          <h4>Honkai Impact</h4>
+          <a class="twitter-timeline" 
+          data-height="400" 
+          data-theme="dark" 
+          data-width="100%"
+          data-chrome="noheader noborders noscrollbar transparent nofooter"
+          href="https://twitter.com/HonkaiImpact3rd?ref_src=twsrc%5Etfw">
+          </a> 
+        </div>
+        <!--Blue Archive-->
+        <div class="timeline-box">
+          <h4>Blue Archive</h4>
+          <a class="twitter-timeline" 
+          data-height="400" 
+          data-theme="dark" 
+          data-width="100%"
+          data-chrome="noheader noborders noscrollbar transparent nofooter"
+          href="https://twitter.com/EN_BlueArchive?ref_src=twsrc%5Etfw">
+          </a>
+        </div> 
+        <!--Fate Grand Order-->
+        <div class="timeline-box">
+          <h4>Fate Grand Order</h4>
+          <a class="twitter-timeline" 
+          data-height="400" 
+          data-theme="dark" 
+          data-width="100%"
+          data-chrome="noheader noborders noscrollbar transparent nofooter"
+          href="https://twitter.com/FateGO_USA?ref_src=twsrc%5Etfw">
+          </a>
+        </div>
+        <!--Arknights-->
+        <div class="timeline-box">
+          <h4>Arknights</h4>
+          <a class="twitter-timeline" 
+          data-height="400" 
+          data-theme="dark" 
+          data-width="100%"
+          data-chrome="noheader noborders noscrollbar transparent nofooter"
+          href="https://twitter.com/ArknightsEN?ref_src=twsrc%5Etfw">
+        </a>
+        </div>
+        <!--Project Sekai-->
+        <div class="timeline-box">
+          <h4>Project Sekai</h4>
+          <a class="twitter-timeline" 
+          data-height="400" 
+          data-theme="dark" 
+          data-width="100%"
+          data-chrome="noheader noborders noscrollbar transparent nofooter"
+          href="https://twitter.com/ColorfulStageEN?ref_src=twsrc%5Etfw">
+        </a>
+        </div>
+        <!--Epic 7-->
+        <div class="timeline-box">
+          <h4>Epic 7</h4>
+          <a class="twitter-timeline" 
+          data-height="400" 
+          data-theme="dark" 
+          data-width="100%"
+          data-chrome="noheader noborders noscrollbar transparent nofooter"
+          href="https://twitter.com/Epic7_Global?ref_src=twsrc%5Etfw">
+        </a>
+        </div>
+      </div> 
+    </main>
+    <footer>
+      <h1>Connect with our community</h1>
+      <div class="social-links-container">
+        <div class="sociallinks">
+          <a href="https://twitter.com" target="_blank"><img src="assets/twitterlogo.png"></a>
+          <a href="https://instagram.com" target="_blank"><img src="assets/instalogo.png"></a>
+        </div>
+        <img class="footerlogo" src="assets/gachaholelogogrey.png">
+        <div class="sociallinks">
+          <a href="https://youtube.com" target="_blank"><img src="assets/ytlogo.png"></a>
+          <a class='reddit' target="_blank" href="https://www.reddit.com/r/gachagaming/"><img src="assets/redditlogo.png"></a>
+        </div>
+      </div>
+      <p>Enquiries: gachahole@hell.co</p>
+      <p>All videos and images other than the Gacha Hole logo are not owned by Gacha Hole but are used under the terms of fair use in education.</p>
+      <p>&#8482; & &#169; 2023 Gacha Hole and its logo are exclusive property of Gachahell, Inc.<br> All rights reserved.</p>
+    </footer>
+  </body>
+</html>

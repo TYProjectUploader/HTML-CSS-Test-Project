@@ -1,0 +1,85 @@
+/*header styles*/
+header {
+  background-color: black;
+  position: fixed; /*makes header unmoving even when scrolling through webpage*/
+  display: flex; /*make header a flex box so when window is resized, elements within are resized too*/
+  justify-content: space-between; /*space contents within evenly among the window space*/
+  align-items: stretch; /*align elements to take up entirety of header*/
+  height: 80px;
+  z-index: 1; /*makes sure header is on top of all other elements by placing it on a higher z "index" (in other words coordinate)*/
+
+  top: 0; 
+  left: 0;
+  right: 0;
+  /*set width and position of header relative to browser camera*/
+
+}
+.logocontainer{
+  margin-left: 50px; /*leaves space on left of container for logo*/
+  margin-right: 70px; /*leaves space on right of container for logo*/
+  width: 160px; /*set size of logo*/
+  flex-shrink: 0; /* prevent logo from shrinking when tab size is decreased since the header is a flex box*/
+}
+.logocontainer a {
+  cursor: pointer; /*sets cursor to pointer upon hovering on the hyperlinks in the header */
+}
+.logo{
+  width: 100%; /* logo takes up entire space of its container*/
+}
+nav { /*makes links on header take up same amount of space and re-sizable*/
+  display: flex;
+  flex: 1;
+}
+button {
+  background-color: black; /*set background colour of logo*/
+  color: white; /*set text colour of buttons*/
+  font-size: 20px;
+  border: none; /*rids of default borders on a button*/
+}
+button a { /*style of text on the buttons*/
+  color: white;
+  cursor: pointer; /* On hover changes cursor style to pointer */
+}
+.barbtns{
+  display: flex; /*makes buttons a flex box so it can be resized with browser size*/
+  flex: 1; /*gives each element equal space*/
+  justify-content: center;
+}
+.barlink:hover { /*add transition effect for button text to turn light blue and have a shadow on hover*/
+  color: lightblue;
+  text-shadow: 2px 2px 2px grey; /*gives the text a grey shadow 2px to the right and bottom with a 2px blur*/
+  transition: all 0.2s; /*sets time it takes for these transitions to happen*/
+}
+.communpost{
+  min-width: 110px; /*set minimum width of the community pots button so that text doesn't wrap beyond header*/
+  height: 100%; /*prevents the dropdown menu from appearing higher than it should be since its position is based on 
+  this button*/
+}
+.news {
+  min-width: 80px;
+}
+.guides {
+  min-width: 100px;
+  height: 100%;
+}
+.barbtns:hover .dropdown{ /*styles applied when hover of buttons with dropdown menus*/
+  display: flex; /*display drop down menu when hovered and make it a flex box*/
+  flex-direction: column; /*make drop down menu visible when top games of the year hovered and make it go downwards instead of sideways which is default*/
+}
+.dropdown { /*drop down menu */
+  display: none; /* drop down menu hidden when not hovered*/
+  position: relative; /*location of drop down menu positioned relative to dropdown button */
+  background-color: black;
+}
+.dropdown a:hover{ /*styles the other buttons that don't have dropdown menus to have same effect*/
+  color: lightblue;
+  text-shadow: 2px 2px 2px grey;
+  transition: all 0.2s;
+}
+.dropdown a {
+  color: white;
+  font-family:  sans-serif;
+  font-size:20px;
+  padding: 12px 0px; /*sets space around hyperlinks on top and bottom but not for left and right */
+  text-align: center; /*align text to center of dropdown menu*/
+}
